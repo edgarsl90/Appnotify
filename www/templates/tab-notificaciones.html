@@ -1,0 +1,17 @@
+<ion-view view-title="Notificaciones">
+  
+ 
+
+  <ion-content>
+
+<ion-list>
+      <ion-item class="item item-thumbnail-left" ng-repeat="notificacion in notificaciones" type="item-text-wrap" 
+      href="#/tab/notificaciones/{{notificacion.id}}">
+        <img ng-src="{{notificacion.logotipo}}">
+        <h2>{{notificacion.name}}</h2>
+        
+        
+      </ion-item>
+    </ion-list>
+  </ion-content>
+</ion-view>
